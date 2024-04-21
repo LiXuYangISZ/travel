@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 
 <head>
@@ -141,7 +141,7 @@
 						//处理服务器相应的数据. data
 						if(data.flag){//
 							//注册成功,发生跳转
-							location.href="register_ok.html";
+							location.href="register_ok.jsp";
 						}else{
 
 							//注册失败,给errorMsg增加提示信息

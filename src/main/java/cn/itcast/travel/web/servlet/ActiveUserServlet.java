@@ -23,7 +23,7 @@ public class ActiveUserServlet extends HttpServlet {
             String msg = null;
             if(flag){
                 //激活成功
-                msg = "激活成功,请<a href='login.html'>登录</a>";
+                msg = "激活成功,请<a href='login.jsp'>登录</a>";
             }else{
                 msg="激活失败,请联系管理员!";
             }

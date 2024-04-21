@@ -13,7 +13,7 @@ public class ExitServlet extends HttpServlet {
         //1.销毁session
         request.getSession().invalidate();
         //2.跳转到登录界面
-        response.sendRedirect(request.getContextPath()+"/login.html");
+        response.sendRedirect(request.getContextPath()+"/login.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

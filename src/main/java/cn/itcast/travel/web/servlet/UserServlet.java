@@ -178,7 +178,7 @@ public class UserServlet extends BaseServlet {
         //1.销毁session
         request.getSession().invalidate();
         //2.跳转到登录界面
-        response.sendRedirect(request.getContextPath()+"/login.html");
+        response.sendRedirect(request.getContextPath()+"/login.jsp");
     }
 
     /**
@@ -199,7 +199,7 @@ public class UserServlet extends BaseServlet {
             String msg = null;
             if(flag){
                 //激活成功
-                msg = "激活成功,请<a href='login.html'>登录</a>";
+                msg = "激活成功,请<a href='login.jsp'>登录</a>";
             }else{
                 msg="激活失败,请联系管理员!";
             }
